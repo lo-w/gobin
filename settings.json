@@ -1,0 +1,144 @@
+{
+  // JAVA START
+  // "maven.dependency.enableConflictDiagnostics": false,
+  "maven.pomfile.autoUpdateEffectivePOM": true,
+  "maven.terminal.useJavaHome": true,
+  // "maven.terminal.customEnv": [
+  //   {
+  //     "environmentVariable": "JAVA_HOME",
+  //     "value": "${env:JAVA_HOME}"
+  //   }
+  // ],
+  // "maven.terminal.favorites": [
+  //   {
+  //     "alias": "clean skip tests",
+  //     "command": "clean -DskipTests"
+  //   },
+  //   {
+  //     "alias": "install skip tests",
+  //     "command": "install -DskipTests"
+  //   }
+  // ],
+  "java.autobuild.enabled": false,
+  "java.dependency.packagePresentation": "hierarchical",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.project.importOnFirstTimeStartup": "automatic",
+  // "java.configuration.runtimes": [
+  //   {
+  //     "name": "JavaSE-1.8",
+  //     "path": "${env:J8_HOME}",
+  //     "default": true
+  //   },
+  //   {
+  //     "name": "JavaSE-11",
+  //     "path": "${env:JAVA_HOME}"
+  //   }
+  // ],
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "rsp-ui.enableStartServerOnActivation": [
+    {
+      "id": "redhat.vscode-server-connector",
+      "name": "Red Hat Server Connector",
+      "startOnActivation": false
+    }
+  ],
+  // JAVA END
+
+  // PYTHON/ANSIBLE START
+  // "python.pythonPath": "${env:CONDA_PREFIX}/bin",
+  // "python.defaultInterpreterPath": "${env:PY_HOME}",
+  // "python.experiments.optOutFrom": [],
+  "python.languageServer": "Pylance",
+  "python.terminal.activateEnvironment":false,
+  // "python.autoComplete.extraPaths": [
+  // "${env:PY_HOME}",
+  // "${env:PY_HOME}/Scripts",
+  // ],
+  // "workbench.editorAssociations": {
+  //   "*.ipynb": "jupyter.notebook.ipynb"
+  // },
+  "python.analysis.extraPaths": [
+    // "${env:CONDA_PREFIX}/lib/python*/site-packages",
+    // "C:\\others\\deposit\\code\\opensource\\openstack"
+  ],
+  // "ansible.python.interpreterPath": "~/.miniconda3/envs/py39/bin/python",
+  // "ansible.ansible.path": "~/.miniconda3/envs/py39/bin/ansible",
+  // "ansible.ansible.useFullyQualifiedCollectionNames": false,
+  // "ansible.ansibleLink.path": "~/.miniconda3/envs/py39/bin/ansible-link",
+  // "ansible.ansibleLint.enabled": false,
+  // PYTHON/ANSIBLE END
+
+  // GO START
+  "go.delveConfig": {
+    "debugAdapter": "dlv-dap",
+    "dlvFlags": ["--only-same-user=false"]
+  },
+  "go.toolsManagement.autoUpdate": true,
+  // GO END
+
+  // NODEJS START
+  "node-module-intellisense.scanBuiltinModules": true,
+  // Scans devDependencies
+  "node-module-intellisense.scanDevDependencies": true,
+  // Scans file modules
+  "node-module-intellisense.scanFileModules": true,
+  /**
+  * Scans alternative module paths (eg. Search on ${workspcaceRoot}/lib).
+  * Useful when using packages like (https://www.npmjs.com/package/app-module-path) to manage require paths folder.
+  **/
+  "node-module-intellisense.modulePaths": [],
+  // "javascript.updateImportsOnFileMove.enabled": "always",
+  "yaml.validate": false,
+  "files.associations": {
+    "*.yml": "yaml",
+    "*.yaml": "yaml",
+    "*.vpy": "python"
+  },
+  // NODEJS END
+
+  // VS CODE
+  // "editor.insertSpaces": true,
+  // "editor.detectIndentation": false,
+  "editor.suggestSelection": "first",
+  "editor.renderWhitespace": "all",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "git.ignoreMissingGitWarning": true,
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen"
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.tabs.enabled": true,
+  // "http.proxy": "http://www-proxy.ericsson.se:8080",
+  // "remote.SSH.remotePlatform": {
+  //   "eo4765": "linux"
+  // },
+  "terminal.integrated.profiles.windows": {
+    "kali-linux (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "kali-linux"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "kali-linux (WSL)",
+  "update.showReleaseNotes": false,
+  "update.mode": "none",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.layoutControl.enabled": false,
+  "window.zoomLevel": 1,
+
+}
